@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+// font
+$fontitle: 32px;
+$fonSectitle: 24px;
+$fonthirdtitle: 1.25rem;
+$fontContent: 18px;
+$fontsmallContent: 16px;
+$fontSmallestContent: 1rem;
+$btntxt: 16px;
+$icon: 48px;
+$smallest: 0.875rem;
+$date: 14px;
+// font-style
+$fontFamily: "Noto Sans TC", sans-serif;
+// RWD 尺寸規範
+@mixin maxWeb {
+  @media (max-width: 1048px) {
+    @content;
+  }
+}
+@mixin web {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin biggerMobile {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+// RWD 圖片縮排　應該要用變數
+// color
+$colorA: #386fa4;
+$colorB: #59a5d8;
+$colorC: #84d2f6;
+$colorD: #fcf300;
+$colorE: #a2d6f9;
+$colorF: #1e96fc;
+
+//
+$colorG: #386fa4;
+$colorH: #6096ba;
+$colorI: #19396c;
+$colorJ: #2a5697;
+$colorK: #edf2fb;
+$colorL: #f8f9fa;
+$colorM: #ced4da;
+//共同container
+.selfcontainer {
+  margin: auto;
+  max-width: 85%;
+  padding: 0 5%;
+  @include mobile {
+    max-width: 100%;
+    // width: 95%;
+    padding: 12px;
+    margin: 0;
+  }
+  @include web {
+    max-width: 100%;
+  }
+}
+.ellipsis {
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+body {
+  background-color: #e9ecef;
+  background-color: #f3f8fb;
+}
+.selfLineHeight {
+  line-height: 200%;
+}
+// 給會被vuetify影響的
+.darkBlueColor{
+  color: #222E3A !important;
+
+}

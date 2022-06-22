@@ -1,0 +1,238 @@
+/*
+*  html5resetcss
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: unset;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+  border: unset;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p, h1, h2, a {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #FCFCFC;
+}
+
+textarea, input:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  outline: none;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+a[title]:hover::after {
+  content: attr(title);
+  color: #11356b;
+  font-size: 14px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.selfcontainer {
+  margin: auto;
+  max-width: 85%;
+  padding: 0 5%;
+}
+
+@media (max-width: 480px) {
+  .selfcontainer {
+    max-width: 100%;
+    padding: 12px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .selfcontainer {
+    max-width: 100%;
+  }
+}
+
+.ellipsis {
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+body {
+  background-color: #e9ecef;
+  background-color: #f3f8fb;
+}
+
+.selfLineHeight {
+  line-height: 200%;
+}
+
+.darkBlueColor {
+  color: #222E3A !important;
+}
+
+.navRwd {
+  gap: 3rem;
+}
+
+@media (max-width: 992px) {
+  .navRwd {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navRwd {
+    display: none;
+  }
+}
+
+.selfGoogleSearch {
+  position: absolute;
+  bottom: 0px;
+  height: 100%;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+}
+
+@media (max-width: 992px) {
+  .selfGoogleSearch {
+    right: 0;
+  }
+}
+
+.searchTxt {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+  .searchTxt {
+    font-size: 1rem;
+  }
+}
+
+.labelTxt {
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 992px) {
+  .labelTxt {
+    font-size: 1rem;
+  }
+}
+
+.logoContainer {
+  padding-right: 3rem;
+}
+
+@media (max-width: 992px) {
+  .logoContainer {
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logoContainer {
+    padding: 0.5rem 0;
+  }
+}
+/*# sourceMappingURL=all.css.map */

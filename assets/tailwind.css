@@ -1,0 +1,17 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@layer components{
+    /* nav */
+    .nav{
+        @apply tw-flex tw-flex-row tw-items-center 
+    }
+    /* tw-px-8 */
+    .navItem{
+        @apply tw-tracking-wide  tw-pb-8 
+    }
+    /* logo */
+    .logo{
+        @apply tw-block tw-w-16 tw-h-16 tw-bg-contain tw-overflow-hidden 
+    }
+}
