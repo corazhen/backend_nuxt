@@ -2,9 +2,9 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'project_2',
+    title: '%s | 管理後台',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'zh-Hant-TW',
     },
     meta: [
       { charset: 'utf-8' },

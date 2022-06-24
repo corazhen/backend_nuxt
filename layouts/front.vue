@@ -1,43 +1,35 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer
-      class="deep-purple accent-4"
-      dark
-      permanent
-      v-model="drawer"
-      app
-    >
-      <Navuetify />
-      <template v-slot:append>
-        <div class="pa-2">
-          <v-btn @click="handleLogOut" block> Logout </v-btn>
-        </div>
-      </template>
-    </v-navigation-drawer>
-    <!-- <Nav></Nav> -->
-    <v-app-bar color="orange" app>
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Application</v-toolbar-title>
-    </v-app-bar>
-    <v-main>
-      <Nuxt />
-    </v-main>
+    <FrontNav />
+    <FrontCarousel/>
+    <Nuxt />
+    <!-- <v-footer>
+      <v-spacer></v-spacer>
+      <div>&copy; {{ new Date().getFullYear() }}</div>
+    </v-footer> -->
   </v-app>
 </template>
 <script>
 // import Nav from '~/components/Nav.vue'
-import Navuetify from '~/components/Navuetify.vue'
+import FrontNav from '~/components/FrontNav.vue'
+import FrontCarousel from '~/components/FrontCarousel.vue'
 
 export default {
   data: () => ({ drawer: null }),
   components: {
     // Nav,
-    Navuetify,
+    FrontNav,
+    FrontCarousel,
   },
   methods: {
     handleLogOut() {
       this.$cookiz.remove('coraTest')
       this.$router.push('/')
+    },
+  },
+  computed: {
+    title() {
+      return this.$store.state.pageTitle
     },
   },
 }
